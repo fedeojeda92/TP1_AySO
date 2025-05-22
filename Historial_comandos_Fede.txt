@@ -1,0 +1,57 @@
+ssh-keygen -t ed25519
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit 
+ls -la
+rm -rf repogit/
+ls -l
+mkdir repogit
+ls -l
+cd repogit/
+ls -l
+git clone git@github.com:fedeojeda92/TP1_AySO.git
+ls -l
+git clone git@github.com:fedeojeda92/TP1_AySO.git
+ls -l
+cd TP1_AySO/
+ls -l
+ls -la
+cat /etc/os-release 
+grep HOME_URL /etc//os-release 
+grep home_url /etc//os-release 
+grep -i home_url /etc//os-release 
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+ls -l
+cat datos_usuario.txt 
+git add .
+git status
+git add .
+git config --global user.email "federico.ojeda992@gmail.com"
+git config --global user.name "fedeojeda92"
+got commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+git push
+grep -i "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt 
+git status
+git add .
+git commit "feat: Anadiendo informacion de CPU"
+git config --global user.email "federico.ojeda992@gmail.com"
+git config --global user.name "fedeojeda92"
+got commit -m "feat: Añadiendo información de CPU"
+git commit -m "feat: Añadiendo información de CPU"
+git push
+git status
+pwd
+ls -l
+cat << EOF >> README.md 
+Alumno: Federico Ojeda
+Division: 314
+Turno: Noche
+EOF
+
+cat README.md 
+git add README.md datos_usuarios.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+history -a
